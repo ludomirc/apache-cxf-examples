@@ -1,11 +1,13 @@
-package pl.ivmx.examples.cxf.first.web;
+package pl.ivmx.examples.cxf.contractlast.web;
 
 import org.apache.log4j.Logger;
-import pl.ivmx.examples.cxf.codefirst.model.CarService_I;
-import pl.ivmx.examples.cxf.codefirst.model.shemas.*;
+import pl.ivmx.examples.cxf.contractlast.model.CarService_I;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.Car;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.CarCollection;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.FaultInfo;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.GenException;
 import pl.ivmx.examples.cxf.ejb.carservice.CarServiceEJB_I;
 
-import javax.ejb.EJB;
 import javax.jws.WebService;
 /**
  * @author bczaplicki@ivmx.pl, IVMX 2014.

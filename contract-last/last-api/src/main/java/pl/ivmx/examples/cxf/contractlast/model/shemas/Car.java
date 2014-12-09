@@ -1,6 +1,5 @@
-package pl.ivmx.examples.cxf.codefirst.model.shemas;
+package pl.ivmx.examples.cxf.contractlast.model.shemas;
 
-import javax.lang.model.element.Name;
 import javax.xml.bind.annotation.*;
 
 /**

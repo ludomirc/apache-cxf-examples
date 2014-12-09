@@ -1,10 +1,9 @@
-package pl.ivmx.examples.cxf.codefirst.model;
+package pl.ivmx.examples.cxf.contractlast.model;
 
-import pl.ivmx.examples.cxf.codefirst.model.shemas.Car;
-import pl.ivmx.examples.cxf.codefirst.model.shemas.CarCollection;
-import pl.ivmx.examples.cxf.codefirst.model.shemas.GenException;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.Car;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.CarCollection;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.GenException;
 
-import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;

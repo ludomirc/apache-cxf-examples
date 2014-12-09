@@ -1,4 +1,4 @@
-package pl.ivmx.examples.cxf.first.web;
+package pl.ivmx.examples.cxf.contractlast.web;
 
 import org.apache.log4j.Logger;
 

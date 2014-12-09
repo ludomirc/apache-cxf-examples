@@ -1,4 +1,4 @@
-package pl.ivmx.examples.cxf.codefirst.model.shemas;
+package pl.ivmx.examples.cxf.contractlast.model.shemas;
 
 import javax.xml.ws.WebFault;
 

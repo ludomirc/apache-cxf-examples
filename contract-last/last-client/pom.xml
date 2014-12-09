@@ -43,7 +43,7 @@
                         <id>process-classes</id>
                         <phase>generate-sources</phase>
                         <configuration>
-                            <className>pl.ivmx.examples.cxf.codefirst.model.CarService_I</className>
+                            <className>pl.ivmx.examples.cxf.contractlast.model.CarService_I</className>
                             <genWsdl>true</genWsdl>
                             <serviceName>CarService</serviceName>
                             <verbose>true</verbose>
@@ -72,7 +72,7 @@
                                         <extraarg>-client</extraarg>
                                         <extraarg>-verbose</extraarg>
                                         <extraarg>-p</extraarg>
-                                        <extraarg>pl.ivmx.examples.cxf.first.client.model</extraarg>
+                                        <extraarg>pl.ivmx.examples.cxf.contractlast.client.model</extraarg>
                                     </extraargs>
                                 </wsdlOption>
                             </wsdlOptions>

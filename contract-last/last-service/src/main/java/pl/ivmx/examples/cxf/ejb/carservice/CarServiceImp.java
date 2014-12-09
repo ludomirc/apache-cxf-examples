@@ -2,9 +2,9 @@ package pl.ivmx.examples.cxf.ejb.carservice;
 
 import org.apache.log4j.Logger;
 
-import pl.ivmx.examples.cxf.codefirst.model.shemas.Car;
-import pl.ivmx.examples.cxf.codefirst.model.shemas.CarCollection;
-import pl.ivmx.examples.cxf.codefirst.model.shemas.Type;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.Car;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.CarCollection;
+import pl.ivmx.examples.cxf.contractlast.model.shemas.Type;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;

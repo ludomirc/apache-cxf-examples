@@ -31,8 +31,8 @@ Attention !!!!. not allowed mixing of the class that implements @WebService anno
 -->
     <jaxws:endpoint
             id="myServ"
-            implementorClass="pl.ivmx.examples.cxf.first.web.CarServiceImp"
-            implementor="pl.ivmx.examples.cxf.first.web.CarServiceImp"
+            implementorClass="pl.ivmx.examples.cxf.contractlast.web.CarServiceImp"
+            implementor="pl.ivmx.examples.cxf.contractlast.web.CarServiceImp"
             address="/car_service"
             />
 

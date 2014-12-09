@@ -1,4 +1,4 @@
-import pl.ivmx.examples.cxf.first.client.model.*;
+import pl.ivmx.examples.cxf.contractlast.client.model.*;
 
 import javax.xml.namespace.QName;
 import java.net.URL;
@@ -30,7 +30,7 @@ public class TestClient {
             System.out.println("Invoking getCar...");
             Integer _getCar_carId = 1;
             try {
-                pl.ivmx.examples.cxf.first.client.model.Car _getCar__return = port.getCar(_getCar_carId);
+                pl.ivmx.examples.cxf.contractlast.client.model.Car _getCar__return = port.getCar(_getCar_carId);
                 System.out.println("getCar.result=" + _getCar__return);
 
             } catch (GenException e) {
@@ -41,7 +41,7 @@ public class TestClient {
         {
             System.out.println("Invoking getCars...");
             try {
-                pl.ivmx.examples.cxf.first.client.model.CarCollection _getCars__return = port.getCars();
+                pl.ivmx.examples.cxf.contractlast.client.model.CarCollection _getCars__return = port.getCars();
                 System.out.println("getCars.result=" + _getCars__return);
 
             } catch (GenException e) {
@@ -64,7 +64,7 @@ public class TestClient {
         }
         {
             System.out.println("Invoking addCars...");
-            pl.ivmx.examples.cxf.first.client.model.CarCollection _addCars_cars = new CarCollection();
+            pl.ivmx.examples.cxf.contractlast.client.model.CarCollection _addCars_cars = new CarCollection();
             _addCars_cars.getCars().add(getCar());
             try {
                 port.addCars(_addCars_cars);
