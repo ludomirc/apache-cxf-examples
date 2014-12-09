@@ -15,8 +15,8 @@
 
     <modules>
         <module>first-api</module>
-       <!-- <module>first-service</module>
-        <module>first-web</module>-->
+       <module>first-service</module>
+        <module>first-web</module>
     </modules>
 
 </project>
