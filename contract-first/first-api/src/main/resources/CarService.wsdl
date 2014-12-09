@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CarService" targetNamespace="http://service.cxf.examples.ivmx.pl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.cxf.examples.ivmx.pl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://service.cxf.examples.ivmx.pl/" schemaLocation="CarServiceSchema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="addCarResponse">
+    <wsdl:part name="parameters" element="tns:addCarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCar">
+    <wsdl:part name="parameters" element="tns:getCar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCars">
+    <wsdl:part name="parameters" element="tns:getCars">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GenException">
+    <wsdl:part name="GenException" element="tns:GenException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCarsResponse">
+    <wsdl:part name="parameters" element="tns:getCarsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCar">
+    <wsdl:part name="parameters" element="tns:addCar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCarsResponse">
+    <wsdl:part name="parameters" element="tns:addCarsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCarResponse">
+    <wsdl:part name="parameters" element="tns:getCarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCars">
+    <wsdl:part name="parameters" element="tns:addCars">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CarService_I">
+    <wsdl:operation name="getCar">
+      <wsdl:input name="getCar" message="tns:getCar">
+    </wsdl:input>
+      <wsdl:output name="getCarResponse" message="tns:getCarResponse">
+    </wsdl:output>
+      <wsdl:fault name="GenException" message="tns:GenException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addCars">
+      <wsdl:input name="addCars" message="tns:addCars">
+    </wsdl:input>
+      <wsdl:output name="addCarsResponse" message="tns:addCarsResponse">
+    </wsdl:output>
+      <wsdl:fault name="GenException" message="tns:GenException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addCar">
+      <wsdl:input name="addCar" message="tns:addCar">
+    </wsdl:input>
+      <wsdl:output name="addCarResponse" message="tns:addCarResponse">
+    </wsdl:output>
+      <wsdl:fault name="GenException" message="tns:GenException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCars">
+      <wsdl:input name="getCars" message="tns:getCars">
+    </wsdl:input>
+      <wsdl:output name="getCarsResponse" message="tns:getCarsResponse">
+    </wsdl:output>
+      <wsdl:fault name="GenException" message="tns:GenException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarServiceSoapBinding" type="tns:CarService_I">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addCars">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addCars">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addCarsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="GenException">
+        <soap:fault name="GenException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="GenException">
+        <soap:fault name="GenException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addCar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addCar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addCarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="GenException">
+        <soap:fault name="GenException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCars">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCars">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCarsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="GenException">
+        <soap:fault name="GenException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarService">
+    <wsdl:port name="CarServicePort" binding="tns:CarServiceSoapBinding">
+      <soap:address location="http://localhost:9090/CarServicePort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

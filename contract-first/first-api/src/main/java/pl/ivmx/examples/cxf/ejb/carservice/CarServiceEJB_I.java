@@ -1,7 +1,7 @@
 package pl.ivmx.examples.cxf.ejb.carservice;
 
-import pl.ivmx.examples.cxf.contractlast.model.shemas.Car;
-import pl.ivmx.examples.cxf.contractlast.model.shemas.CarCollection;
+import pl.ivmx.examples.cxf.service.Car;
+import pl.ivmx.examples.cxf.service.CarCollection;
 
 /**
  * @author bczaplicki@ivmx.pl, IVMX 2014.

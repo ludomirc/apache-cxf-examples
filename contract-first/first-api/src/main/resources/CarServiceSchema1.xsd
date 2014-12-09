@@ -1,0 +1,73 @@
+<xs:schema xmlns:tns="http://service.cxf.examples.ivmx.pl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.cxf.examples.ivmx.pl/">
+  <xs:element name="addCar" type="tns:addCar"/>
+  <xs:element name="addCarResponse" type="tns:addCarResponse"/>
+  <xs:element name="addCars" type="tns:addCars"/>
+  <xs:element name="addCarsResponse" type="tns:addCarsResponse"/>
+  <xs:element name="carCollection" type="tns:carCollection"/>
+  <xs:element name="getCar" type="tns:getCar"/>
+  <xs:element name="getCarResponse" type="tns:getCarResponse"/>
+  <xs:element name="getCars" type="tns:getCars"/>
+  <xs:element name="getCarsResponse" type="tns:getCarsResponse"/>
+  <xs:element name="type" type="tns:type"/>
+  <xs:complexType name="getCar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="carId" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="document" type="tns:Car"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Car">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="type" type="tns:type"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FaultInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addCars">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cars" type="tns:carCollection"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="carCollection">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="cars" nillable="true" type="tns:Car"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addCarsResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="addCar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="car" type="tns:Car"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addCarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="document" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCars">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getCarsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="document" type="tns:carCollection"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenException" nillable="true" type="tns:FaultInfo"/>
+</xs:schema>
