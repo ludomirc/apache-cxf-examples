@@ -9,15 +9,15 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>code-first-client</artifactId>
-    <name>Code first client example</name>
+    <artifactId>contract-last-client</artifactId>
+    <name>Contract last client example</name>
 
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>pl.ivmx.examples.cxf</groupId>
-            <artifactId>code-first-api</artifactId>
+            <artifactId>contract-last-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -9,8 +9,8 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>code-first-api</artifactId>
-	 <name>Code first api example</name>
+    <artifactId>contract-last-api</artifactId>
+    <name>Contract last api example</name>
     <packaging>jar</packaging>
 
     <build>

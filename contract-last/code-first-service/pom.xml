@@ -9,8 +9,8 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>code-first-service</artifactId>
-    <name>Code first service example</name>
+    <artifactId>contract-last-service</artifactId>
+    <name>Contract last service example</name>
 
     <packaging>ejb</packaging>
 
@@ -20,7 +20,7 @@
 
         <dependency>
             <groupId>pl.ivmx.examples.cxf</groupId>
-            <artifactId>code-first-api</artifactId>
+            <artifactId>contract-last-api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
