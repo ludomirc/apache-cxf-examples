@@ -14,10 +14,10 @@
     </properties>
 
     <modules>
-        <module>contract-last-api</module>
-        <module>contract-last-service</module>
-        <module>contract-last-web</module>
-        <module>contract-last-client</module>
+        <module>last-api</module>
+        <module>last-service</module>
+        <module>last-web</module>
+        <module>last-client</module>
     </modules>
 
 </project>
