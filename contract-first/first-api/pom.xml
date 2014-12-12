@@ -31,6 +31,11 @@
                             <wsdlOptions>
                                 <wsdlOption>
                                     <wsdl>src/main/resources/CarService.wsdl</wsdl>
+                                    <frontEnd>jaxws21</frontEnd>
+                                    <faultSerialVersionUID>1</faultSerialVersionUID>
+                                    <bindingFiles>
+                                        <bindingFile>src/main/resources/binding.xml</bindingFile>
+                                    </bindingFiles>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
