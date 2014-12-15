@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.ivmx.examples.cxf</groupId>
-    <artifactId>contract-last-aggregator</artifactId>
-    <name>Contract last example aggregator</name>
+    <artifactId>jax-ws-contract-last-aggregator</artifactId>
+    <name>JAX-WS contract last example aggregator</name>
 
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
