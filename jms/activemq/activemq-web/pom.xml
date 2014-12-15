@@ -9,17 +9,23 @@
         <relativePath>../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>contract-last-api</artifactId>
-    <name>Contract last api example</name>
-    <packaging>jar</packaging>
+    <artifactId>activemq-web</artifactId>
+    <name>ActiveMQ web example</name>
+
+    <packaging>war</packaging>
+
+    <dependencies>
+
+    </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+            </plugin>
         </plugins>
-
     </build>
 </project>
