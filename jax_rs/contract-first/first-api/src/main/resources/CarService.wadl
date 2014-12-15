@@ -1,0 +1,79 @@
+<application
+        xmlns="http://wadl.dev.java.net/2009/02"
+        xmlns:ns="http://service.cxf.examples.ivmx.pl/"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        >
+    <grammars>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   xmlns:tns="http://service.cxf.examples.ivmx.pl/"
+                   attributeFormDefault="unqualified"
+                   elementFormDefault="unqualified"
+                   targetNamespace="http://service.cxf.examples.ivmx.pl/"
+                >
+            <xs:element name="car" type="tns:car"/>
+            <xs:element name="carCollection" type="tns:carCollection"/>
+            <xs:element name="type" type="tns:type"/>
+            <xs:complexType name="carCollection">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="cars" nillable="true" type="tns:car"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="car">
+                <xs:sequence>
+                    <xs:element name="id" type="xs:int"/>
+                    <xs:element ref="tns:type"/>
+                    <xs:element name="brand" type="xs:string"/>
+                    <xs:element name="name" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </grammars>
+    <resources base="http://localhost:8080/car_service" >
+        <resource path="/carservice/" id="carService">
+            <resource path="addcar/">
+                <method name="POST" id="addCar">
+                    <request>
+                        <representation mediaType="*/*" element="ns:car" />
+                    </request>
+                    <response>
+                        <representation mediaType="text/xml">
+                            <param name="result" style="plain" type="xs:int"/>
+                        </representation>
+                    </response>
+                </method>
+            </resource>
+            <resource path="addcars/">
+                <method name="POST" id="addCars">
+                    <request>
+                        <representation mediaType="*/*" element="ns:carCollection"/>
+                    </request>
+                    <response>
+                        <representation mediaType="text/xml"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="getcar/{carId}/">
+                <param name="carId" style="template" type="xs:int"/>
+                <method name="GET" id="getCar">
+                    <request/>
+                    <response>
+                        <representation mediaType="text/xml" element="ns:car"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="getcars/">
+                <method name="GET" id="getCars">
+                    <response>
+                        <representation mediaType="text/xml" element="ns:carCollection"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>
