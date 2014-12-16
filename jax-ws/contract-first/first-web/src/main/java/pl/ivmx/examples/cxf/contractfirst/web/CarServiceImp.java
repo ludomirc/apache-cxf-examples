@@ -2,6 +2,7 @@ package pl.ivmx.examples.cxf.contractfirst.web;
 
 import org.apache.log4j.Logger;
 
+import pl.ivmx.examples.cxf.common.ejbtool.JndiUtils;
 import pl.ivmx.examples.cxf.ejb.carservice.CarServiceEJB_I;
 import pl.ivmx.examples.cxf.service.*;
 
