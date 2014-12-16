@@ -23,6 +23,11 @@
         <url>http://www.infovidematrix.pl</url>
     </organization>
 
+
+    <modules>
+        <module>common/ejbtool</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
 
