@@ -15,6 +15,7 @@
     <packaging>war</packaging>
 
     <dependencies>
+
         <!-- internal dependencies -->
         <dependency>
             <groupId>pl.ivmx.examples.cxf</groupId>
@@ -32,10 +33,10 @@
             <groupId>pl.ivmx.examples.cxf</groupId>
             <artifactId>contract-last-service</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <type>jar</type>
         </dependency>
 
         <!-- external dependencies -->
+        <!-- dependency for Apache cxf JAX-WS frontend api-->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
@@ -49,10 +50,19 @@
             <artifactId>spring-web</artifactId>
         </dependency>
 
+        <!-- dependency for logging -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- dependency for java ee-->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>

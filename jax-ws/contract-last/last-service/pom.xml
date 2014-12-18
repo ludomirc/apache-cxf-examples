@@ -26,7 +26,6 @@
         </dependency>
 
         <!-- external dependency -->
-
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>

@@ -17,7 +17,6 @@
     <dependencies>
 
         <!-- internal dependency -->
-
         <dependency>
             <groupId>pl.ivmx.examples.cxf</groupId>
             <artifactId>contract-first-api</artifactId>
@@ -26,13 +25,13 @@
         </dependency>
 
         <!-- external dependency -->
-
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <scope>provided</scope>
         </dependency>
 
+        <!-- java ee dependency -->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
