@@ -73,6 +73,7 @@ public class CarServiceImp implements CarService {
 
     @Override
     public CarCollection getCars() {
+        invokeMethodLog("getCars");
         CarCollection carCollection = null;
         try {
             carCollection = carServiceEjb.getCars();
