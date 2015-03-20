@@ -8,7 +8,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd
 http://cxf.apache.org/jaxrs
 http://cxf.apache.org/schemas/jaxrs.xsd">
 
-    <jaxrs:server id="jarRsCarService" address="/car_service">
+    <jaxrs:server id="jaxRsCarService" address="/car_service">
         <jaxrs:serviceBeans>
             <ref bean="carServiceImpl" />
         </jaxrs:serviceBeans>

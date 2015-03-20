@@ -6,48 +6,29 @@
         <groupId>pl.ivmx.examples.cxf</groupId>
         <artifactId>cfx-examples-base</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>contract-first-service</artifactId>
-    <name>Contract first service example</name>
+    <artifactId>common-ejbtool</artifactId>
+    <name>Common ejb tool</name>
+    <packaging>jar</packaging>
 
-    <packaging>ejb</packaging>
 
     <dependencies>
-
-        <!-- internal dependency -->
-        <dependency>
-            <groupId>pl.ivmx.examples.cxf</groupId>
-            <artifactId>contract-first-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- external dependency -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <scope>provided</scope>
         </dependency>
-
-        <!-- java ee dependency -->
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
-
-            <plugin>
-                <artifactId>maven-ejb-plugin</artifactId>
-            </plugin>
         </plugins>
+
     </build>
 </project>

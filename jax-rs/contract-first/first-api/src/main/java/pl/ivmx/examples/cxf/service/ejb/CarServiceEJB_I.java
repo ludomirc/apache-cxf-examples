@@ -4,6 +4,7 @@ import pl.ivmx.examples.cxf.service.schema.Car;
 import pl.ivmx.examples.cxf.service.schema.CarCollection;
 
 /**
+ * Sample ejb interface for car service
  * @author bczaplicki@ivmx.pl, IVMX 2014.
  */
 public interface CarServiceEJB_I {

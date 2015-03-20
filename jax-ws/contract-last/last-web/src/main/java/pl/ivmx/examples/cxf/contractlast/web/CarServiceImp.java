@@ -1,6 +1,7 @@
 package pl.ivmx.examples.cxf.contractlast.web;
 
 import org.apache.log4j.Logger;
+import pl.ivmx.examples.cxf.common.ejbtool.JndiUtils;
 import pl.ivmx.examples.cxf.contractlast.model.CarService_I;
 import pl.ivmx.examples.cxf.contractlast.model.shemas.Car;
 import pl.ivmx.examples.cxf.contractlast.model.shemas.CarCollection;

@@ -1,6 +1,7 @@
 package pl.ivmx.examples.cxf.jaxrs.contractfirst.web;
 
 import org.apache.log4j.Logger;
+import pl.ivmx.examples.cxf.common.ejbtool.JndiUtils;
 import pl.ivmx.examples.cxf.service.CarService;
 import pl.ivmx.examples.cxf.service.ejb.CarServiceEJB_I;
 import pl.ivmx.examples.cxf.service.schema.Car;
@@ -72,6 +73,7 @@ public class CarServiceImp implements CarService {
 
     @Override
     public CarCollection getCars() {
+        invokeMethodLog("getCars");
         CarCollection carCollection = null;
         try {
             carCollection = carServiceEjb.getCars();
